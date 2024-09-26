@@ -37,14 +37,10 @@ function scrollFunction() {
 };
 })
 
- /* $('.contagem').each(function () {
-    $(this).prop('Counter',0).animate({
-        Counter: $(this).text()
-    }, {
-        duration: 4000,
-        easing: 'swing',
-        step: function (now) {
-            $(this).text(Math.ceil(now));
-        }
-    });
-});*/
+
+document.addEventListener("DOMContentLoaded", function () {
+  var data_atual = new Date();
+  var ano = data_atual.getFullYear() - 1;
+  var ano_empresa = ano - 1987;
+  document.getElementById("anosempresa").innerHTML = ano_empresa;
+});

@@ -1,38 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <title>Rush Informática - Assistência técnica</title>
   <link rel="canonical" href="https://rushinformatica.com.br/">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta charset="utf-8">
-<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet" type="text/css">
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link
+    href="https://fonts.googleapis.com/css?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,600;1,700;1,900&display=swap"
+    rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script src="https://use.fontawesome.com/76caaa763e.js"></script>
   <link rel="stylesheet" type="text/css" href="style/style.css">
+  <script src="js/script.js"></script>
   <link rel="sortcut icon" href="img/favicon.ico" type="image/x-icon">;
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-  <meta name="description" content="Assistência técnica para empresas de todos os portes. Manutenção, instalação e suporte de informática. Atendemos também equipamento pessoal. Entre em contato!">
+  <meta name="description"
+    content="Assistência técnica para empresas de todos os portes. Manutenção, instalação e suporte de informática. Atendemos também equipamento pessoal. Entre em contato!">
 
-<script async defer>
-document.addEventListener("DOMContentLoaded", function() {
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5YJSBQFFQN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-      var data_atual = new Date();
-      var ano = data_atual.getFullYear() - 1;
-      var ano_empresa = ano - 1987;
-
-      document.getElementById("anosempresa").innerHTML = ano_empresa;
-});
-
+    gtag('config', 'G-5YJSBQFFQN');
   </script>
+
 </head>
 
 <body id="Home" data-spy="scroll" data-target=".navbar" data-offset="60">
-<nav class="navbar navbar-inverse navbar-fixed-top">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
 
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -40,7 +43,8 @@ document.addEventListener("DOMContentLoaded", function() {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#Home" id="logoNav"><img src="img/logoW.png" width="90px" class="logoPrincipal" alt="Rush Informática"></a>
+      <a class="navbar-brand" href="#Home" id="logoNav"><img src="img/logoW.png" width="90px" class="logoPrincipal"
+          alt="Rush Informática"></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
@@ -51,98 +55,70 @@ document.addEventListener("DOMContentLoaded", function() {
       </ul>
     </div>
 
-</nav>
+  </nav>
 
 
-<a href="https://api.whatsapp.com/send?phone=5511983714406&text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20que%20voc%C3%AAs%20oferecem!" id="btnWhatsapp" title="Mande uma mensagem!" target="_blank">
-  <i class="fa fa-whatsapp" aria-hidden="true"></i>
-</a>
+  <a href="https://api.whatsapp.com/send?phone=5511983714406&text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20que%20voc%C3%AAs%20oferecem!"
+    id="btnWhatsapp" title="Mande uma mensagem!" target="_blank" onclick="evento_gtag('btn_whatsapp')">
+    <i class="fa fa-whatsapp" aria-hidden="true"></i>
+  </a>
 
-<a href="#Home" id="btnTop" title="Ir para cima">
-  <span class="glyphicon glyphicon-chevron-up"></span>
-</a>
+  <a href="#Home" id="btnTop" title="Ir para cima">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
 
-<!--HERO-->
-<div class="container-fluid section-1 flex-center" data-aos="fade-right">
-  <div class="row flex-center">
-    <div class="col-lg-6">
-      <h1>Soluções inteligentes em tecnologia para o sucesso da sua empresa.</h1>
-      <p>Automação comercial, manutenção empresarial e suporte rápido. Mais de 35 anos oferecendo soluções de informática para empresas da grande São Paulo.</p>
+  <!--HERO-->
+  <section class="container-fluid section-1 flex-center" data-aos="fade-right">
+    <div class="row flex-center">
+      <div class="col-lg-6">
+        <h1>Soluções inteligentes em tecnologia para o sucesso da sua empresa.</h1>
+        <p>Automação comercial, manutenção empresarial e suporte rápido. Mais de 35 anos oferecendo soluções de
+          informática para empresas da grande São Paulo.</p>
 
-      <a class="btn-primary" href="#Contato">Solicitar um orçamento</a>
-    </div>
-    <div class="col-lg-1"></div>
-    <div class="col-lg-5" data-aos="fade-left" >
+        <a target="_blank" class="btn-primary" href="https://api.whatsapp.com/send?phone=5511983714406&text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20que%20voc%C3%AAs%20oferecem!" onclick="evento_gtag('cta_hero')">Solicitar um orçamento</a>
+      </div>
+      <div class="col-lg-1"></div>
+      <div class="col-lg-5" data-aos="fade-left">
         <img src="img/solucoes-informatica.png" alt="Soluções de TI">
+      </div>
     </div>
-  </div>
-</div>
+  </section>
 
-<!--SOLUÇÕES-->
-<div id="Sobre" class="container-fluid section-2" >
-  <div class="row flex-center">
-    <div class="col-lg-5" data-aos="fade-right">
-      <img class="desktop-only" src="img/tecnico-de-informatica.jpg" width="100%" height="100%" alt="Técnico em manutenção e suporte de informática">
-  </div>
-  <div class="col-lg-1"></div>
-    <div class="col-lg-6" data-aos="fade-left">
-      <h2>Nós temos os recursos que sua empresa precisa.</h2>
-      <p>A tecnologia é o que move os negócios, <b>problemas com dispositivos e sistemas são fatais para a produção</b>. A Rush Informática resolve seus desafios com <b>soluções para seu ambiente de TI</b>.</p>
-      <ul class="lista-sobre">
-        <li>&nbspAssistência técnica rápida e eficaz.</li>
-        <li>&nbspInstalação eficiente</li>
-        <li>&nbspSoluções para empresas</li>
-      </ul>
-      <a class="btn-primary" href="#Servicos">Quero saber mais</a>
+  <!--SOLUÇÕES-->
+  <section id="Sobre" class="container-fluid section-2">
+    <div class="row flex-center">
+      <div class="col-lg-5" data-aos="fade-right">
+        <img class="desktop-only" src="img/tecnico-de-informatica.jpg" width="100%" height="100%"
+          alt="Técnico em manutenção e suporte de informática">
+      </div>
+      <div class="col-lg-1"></div>
+      <div class="col-lg-6" data-aos="fade-left">
+        <h2>Nós temos os recursos que sua empresa precisa.</h2>
+        <p>A tecnologia é o que move os negócios, <b>problemas com dispositivos e sistemas são fatais para a
+            produção</b>. A Rush Informática resolve seus desafios com <b>soluções para seu ambiente de TI</b>.</p>
+        <ul class="lista-sobre">
+          <li>&nbspAssistência técnica rápida e eficaz.</li>
+          <li>&nbspInstalação eficiente</li>
+          <li>&nbspSoluções para empresas</li>
+        </ul>
+        <a class="btn-primary" href="#Servicos">Quero saber mais</a>
+      </div>
     </div>
-  </div>
-</div>
+  </section>
 
-<!--
-<div id="Sobre" class="container-fluid section-2" >
-  <div class="row flex-center">
-    <div class="col-lg-6" data-aos="fade-left">
-      <h2>Nós temos os recursos que sua empresa precisa.</h2>
-      <p>A tecnologia é o que move os negócios, <b>problemas com dispositivos e sistemas são fatais para a produção</b>. A Rush Informática resolve seus desafios com <b>soluções para seu ambiente de TI</b>.</p>
-
-      <a class="btn-primary desktop-only" href="#Servicos">Quero saber mais</a>
+  <!--SERVIÇOS-->
+  <section id="Servicos" class="container-fluid section-2  bg-grey">
+    <div class="row">
+      <div class="col-lg-12" style="text-align: center;" data-aos="fade-down">
+        <h2>Serviços eficazes para impulsionar o crescimento do seu negócio.</h2>
+      </div>
     </div>
-
-
-    <div class="col-lg-1"></div>
-    <div class="col-lg-5" data-aos="fade-right">
-        <div class="card-1">
-          <h4>Assistência técnica rápida e eficaz</h4>
-          <p>Nossa equipe está pronta para <b>resolver seus problemas o mais rápido o possível</b>, não deixando sua empresa ficar parada.</p>
-        </div>
-        <div class="card-1">
-          <h4>Instalação e manutenção eficiente</h4>
-          <p>Nós instalamos e fazemos o serviço de manutenção necessário para seu equipamento. <b>Evitando problemas futuros</b>.</p>
-        </div>
-        <div class="card-1">
-          <h4>Soluções para empresas de todos os tamanhos</h4>
-          <p>Pequeno, médio ou grande porte: a Rush possui <b>serviços para atender todos os tamanhos de empresa</b>.</p>
-        </div>
-        <a class="btn-primary mobile-only" href="#Servicos">Quero saber mais</a>
-    </div>
-  </div>
-</div>
+    <!--
+- Adicionar card-header, card-body e card-footer >  Pro botão ficar na mesma altura no mobile
 -->
-
-<!--SERVIÇOS-->
-<div id="Servicos" class="container-fluid section-2  bg-grey">
-  <div class="row">
-    <div class="col-lg-12" style="text-align: center;" data-aos="fade-down">
-      <h2>Serviços eficazes para impulsionar o crescimento do seu negócio.</h2>
-    </div>
-  </div>
-<!--
-- Adicionar card-body e card-footer >  Pro botão ficar na mesma altura no mobile
-- Descobrir porquê no celular não fica como slider
--->
-  <div data-aos="fade-up">
-    <div class="row flex-center slider-servicos">
-      <div class="flex-center slides-servicos">
+    <div data-aos="fade-up">
+      <div class="row flex-center slider-servicos">
+        <div class="flex-center slides-servicos row">
           <div class="servicos-card">
             <div class="servicos-card-header flex-center">
               <img src="img/icon-ti-servicos.png" width="50px">
@@ -158,15 +134,14 @@ document.addEventListener("DOMContentLoaded", function() {
               <li>Wi-fi</li>
               <li>Configuração de e-mail</li>
             </ul>
-            <a class="btn-primary mobile-only" href="#Contato">Solicitar orçamento</a>
+            <a target="_blank" class="btn-primary mobile-only" href="https://api.whatsapp.com/send?phone=5511983714406&text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20que%20voc%C3%AAs%20oferecem!" onclick="evento_gtag('cta_servicos_ti')">Solicitar orçamento</a>
           </div>
-
 
           <div class="servicos-card">
             <div class="servicos-card-header flex-center">
-            <img src="img/icon-manutencao.png" width="50px">
-            <h4>Diagnóstico e manutenção</h4>
-          </div>
+              <img src="img/icon-manutencao.png" width="50px">
+              <h4>Diagnóstico e manutenção</h4>
+            </div>
             <ul>
               <li>Manutenção preventiva e corretiva</li>
               <li>Devolução rápida</li>
@@ -174,236 +149,253 @@ document.addEventListener("DOMContentLoaded", function() {
               <li>Impressoras</li>
               <li>Monitores</li>
             </ul>
-            <a class="btn-primary mobile-only" href="#Contato">Solicitar orçamento</a>
+            <a target="_blank" class="btn-primary mobile-only" href="https://api.whatsapp.com/send?phone=5511983714406&text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20que%20voc%C3%AAs%20oferecem!" onclick="evento_gtag('cta_servicos_manutencao')">Solicitar orçamento</a>
           </div>
 
-        <div class="servicos-card">
-          <div class="servicos-card-header flex-center">
-            <img src="img/icon-automacao.png" width="50px">
-            <h4>Automação comercial</h4>
+          <div class="servicos-card">
+            <div class="servicos-card-header flex-center">
+              <img src="img/icon-automacao.png" width="50px">
+              <h4>Automação comercial</h4>
+            </div>
+            <ul>
+              <li>Manutenção e venda de equipamentos</li>
+              <li>Balanças comerciais</li>
+              <li>Scanners</li>
+              <li>Impressoras</li>
+              <li>Verificadores de Preço</li>
+              <li>Nobreak</li>
+            </ul>
+            <a target="_blank" class="btn-primary mobile-only" href="https://api.whatsapp.com/send?phone=5511983714406&text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20que%20voc%C3%AAs%20oferecem!" onclick="evento_gtag('cta_servicos_automacao')">Solicitar orçamento</a>
           </div>
-          <ul>
-            <li>Manutenção e venda de equipamentos</li>
-            <li>Balanças comerciais</li>
-            <li>Scanners</li>
-            <li>Impressoras</li>
-            <li>Verificadores de Preço</li>
-            <li>Nobreak</li>
-          </ul>
-          <a class="btn-primary mobile-only" href="#Contato">Solicitar orçamento</a>
+
+          <div class="servicos-card">
+            <div class="servicos-card-header flex-center">
+              <img src="img/icon-suporte.png" width="50px">
+              <h4>Suporte técnico</h4>
+            </div>
+            <ul>
+              <li>Suporte corretivo e preventivo</li>
+              <li>Atendimento avulso e por contrato</li>
+              <li>Servidores</li>
+              <li>Estações de trabalho</li>
+            </ul>
+            <a target="_blank" class="btn-primary mobile-only" href="https://api.whatsapp.com/send?phone=5511983714406&text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20que%20voc%C3%AAs%20oferecem!" onclick="evento_gtag('cta_servicos_suporte')">Solicitar orçamento</a>
+          </div>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12" style="text-align: center;">
+          <a target="_blank" class="btn-primary desktop-only" href="https://api.whatsapp.com/send?phone=5511983714406&text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20que%20voc%C3%AAs%20oferecem!" onclick="evento_gtag('cta_servicos')">Solicitar um orçamento</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!--AUTORIDADE-->
+  <section class="container-fluid section-3">
+    <div class="row flex-center">
+      <div class="col-sm-3">
+        <p><span class="contagem" id="anosempresa"></span></p>
+        <p class="reputacao">anos de empresa</p>
+      </div>
+      <div class="col-sm-1"></div>
+      <div class="col-sm-3 numeros-importantes">
+        <p>+ de &nbsp<span class="contagem">500</span></p>
+        <p class="reputacao">empresas atendidas</p>
+      </div>
+      <div class="col-sm-1"></div>
+      <div class="col-sm-4 numeros-importantes">
+        <p class="reputacao">Melhor Prestadores
+          de Serviços de Suporte
+          no Prêmio Logicalis 2021 </p>
+      </div>
+    </div>
+  </section>
+
+  <!--DIFERENCIAL-->
+  <section class="container-fluid section-2">
+    <div class="row flex-center">
+      <div class="col-lg-6" data-aos="fade-left">
+        <h2>Por que escolher a Rush Informática?</h2>
+        <p>Um <b>parceiro de confiança</b> para lidar com suas necessidades de TI é essencial para o seu negócio.</p>
+        <a target="_blank" class="btn-primary desktop-only" href="https://api.whatsapp.com/send?phone=5511983714406&text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20que%20voc%C3%AAs%20oferecem!" onclick="evento_gtag('cta_diferencial')">Entrar em contato</a>
+      </div>
+      <div class="col-lg-1"></div>
+      <div class="col-lg-5" data-aos="fade-right">
+        <div class="row">
+          <div class="card-2 flex-center">
+            <img src="img/experiencia-tecnologia.png" alt="Muitas décadas de experiência em informática e tecnologia">
+            <div>
+              <h4>Experiência vasta:</h4>
+              <p class="p-card">Com <b>muitos anos no setor</b>, nossa equipe possui o conhecimento para solucionar
+                diversos tipos de problemas.</p>
+            </div>
+          </div>
+          <div class="card-2 flex-center">
+            <img src="img/atendimento-qualidade.png"
+              alt="Atendimento de qualidade para suporte, manutenção e instalação">
+            <div>
+              <h4>Compromisso com a excelência:</h4>
+              <p class="p-card">Entregamos um <b>serviço de alta qualidade</b> para garantir que sua empresa tenha
+                sucesso na operação.</p>
+            </div>
+          </div>
+          <div class="card-2 flex-center">
+            <img src="img/assistencia-personalizada.png" alt="Contrato de Suporte de TI para empresas">
+            <div>
+              <h4>Atendimento personalizado:</h4>
+              <p class="p-card">Oferecemos soluções personalizadas para atender às suas necessidades de TI do seu
+                negócio de <b>forma eficaz</b>.</p>
+            </div>
+          </div>
         </div>
 
-        <div class="servicos-card">
-          <div class="servicos-card-header flex-center">
-            <img src="img/icon-suporte.png" width="50px">
-            <h4>Suporte técnico</h4>
+        <a target="_blank" class="btn-primary mobile-only" href="https://api.whatsapp.com/send?phone=5511983714406&text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20que%20voc%C3%AAs%20oferecem!" onclick="evento_gtag('cta_servicos_diferencial')">Entrar em contato</a>
+      </div>
+    </div>
+  </section>
+
+  <!--CLIENTES-->
+  <section id="Clientes" class="container-fluid section-1">
+    <div class="row flex-center">
+      <div class="col-lg-6" data-aos="fade-right">
+        <h2>Grandes empresas confiam no nosso trabalho há vários anos.</h2>
+        <p>Prestamos serviços para empresas de todo porte e setor, estabelecendo relacionamentos duradouros com clientes
+          fiéis que confiam em nossos serviços.</p>
+        <a target="_blank" class="btn-primary" href="https://api.whatsapp.com/send?phone=5511983714406&text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20que%20voc%C3%AAs%20oferecem!" onclick="evento_gtag('cta_clientes')">Quero conhecer</a>
+
+      </div>
+      <div class="col-lg-2"></div>
+      <div class="col-lg-5" data-aos="fade-left">
+        <div class="row flex-center">
+          <div class="clientes-unidade  col-xs-4 flex-center">
+            <img src="img/burger-king.png" alt="Burger King" width="100px">
           </div>
-          <ul>
-            <li>Suporte corretivo e preventivo</li>
-            <li>Atendimento avulso e por contrato</li>
-            <li>Servidores</li>
-            <li>Estações de trabalho</li>
-          </ul>
-          <a class="btn-primary mobile-only" href="#Contato">Solicitar orçamento</a>
+          <div class="clientes-unidade  col-xs-4 flex-center">
+            <img src="img/mercadodia.png" alt="Dia%" width="100px">
+          </div>
+          <div class="clientes-unidade  col-xs-4 flex-center">
+            <img src="img/kopenhagen.png" alt="Kopenhagen" width="100px">
+          </div>
+        </div>
+        <div class="row flex-center">
+          <div class="clientes-unidade  col-xs-4 flex-center">
+            <img src="img/kfc.png" alt="KFC" width="100px">
+          </div>
+          <div class="clientes-unidade  col-xs-4 flex-center">
+            <img src="img/giraffas.png" alt="Giraffas" width="100px">
+          </div>
+          <div class="clientes-unidade  col-xs-4 flex-center">
+            <img src="img/tenda-construtora.png" alt="Tenda Construtora" width="100px">
+          </div>
+        </div>
+        <div class="row flex-center">
+          <div class="clientes-unidade  col-xs-4 flex-center">
+            <img src="img/oki.png" alt="OKI" width="100px">
+          </div>
+          <div class="clientes-unidade  col-xs-4 flex-center">
+            <img src="img/logicalis.png" alt="Logicalis" width="100px">
+          </div>
+          <div class="clientes-unidade col-xs-4 flex-center">
+            <img src="img/soin.png" alt="Soin" width="100px">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--CONTATO-->
+  <section id="Contato" class="container-fluid section-2 ">
+    <div class="row flex-center">
+      <div class="col-lg-7" data-aos="fade-left">
+        <h2>Solicite a sua proposta hoje mesmo e garanta um serviço de informática de qualidade. </h2>
+        <div class="row">
+          <div class="div-contato col-sm-6">
+            <h4>WhatsApp</h4>
+            <a onclick="evento_gtag('contato_whatsapp')" target="_blank"
+              href="https://api.whatsapp.com/send?phone=5511983714406&text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20que%20voc%C3%AAs%20oferecem!">(11)
+              98371-4406</a>
+          </div>
+          <div class="div-contato col-sm-6">
+            <h4>E-mail</h4>
+            <a target="_blank" href="mailto:contato@rushinformatica.com.br" onclick="evento_gtag('contato_email')">contato@rushinformatica.com.br </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="div-contato col-sm-6">
+            <h4>Telefone</h4>
+            <p>(11) 5547-7483</p>
+            <p>(11) 5541-7483</p>
+          </div>
+          <div class="div-contato col-sm-6">
+            <h4>Endereço</h4>
+            <p>Rua Amleto Farro, 600 - Santo Amaro, São Paulo - SP, CEP: 04754-060</p>
+          </div>
         </div>
 
       </div>
+      <div class="col-lg-5" data-aos="fade-right ">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!4v1614442521832!6m8!1m7!1sSO-_GqDvBBX3zjzcyiDP9g!2m2!1d-23.64990757579748!2d-46.71213309877202!3f23.992027!4f0!5f0.7820865974627469"
+          width="100%" height="350" style="border:0; border-radius: 20px;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
     </div>
+  </section>
+
+  <footer>
     <div class="row">
-      <div class="col-lg-12" style="text-align: center;">
-        <a class="btn-primary desktop-only" href="#Contato">Solicitar um orçamento</a>
+      <div class="col-lg-3 col-sm-6">
+        <img src="img/logoW.png" width="60%" alt="Rush Informática">
       </div>
-    </div>
-  </div>
+      <div class="col-lg-4 col-sm-6">
+        <p>A Rush Informática oferece soluções tecnológicas de excelência. Nossa equipe altamente qualificada está
+          pronta para atender às suas necessidades de TI, garantindo qualidade e inovação.</p>
+        <div>
 
-</div>
-
-<!--AUTORIDADE-->
-<div class="container-fluid section-3">
-  <div class="row flex-center">
-    <div class="col-sm-3">
-      <p><span class="contagem" id="anosempresa"></span></p>
-      <p class="reputacao">anos de empresa</p>
-    </div>
-    <div class="col-sm-1"></div>
-    <div class="col-sm-3 numeros-importantes">
-      <p>+ de &nbsp<span class="contagem">500</span></p>
-      <p class="reputacao">empresas atendidas</p>
-    </div>
-    <div class="col-sm-1" ></div>
-    <div class="col-sm-4 numeros-importantes">
-      <p class="reputacao">Melhor Prestadores
-        de Serviços de Suporte
-        no Prêmio Logicalis 2021 </p>
-    </div>
-  </div>
-</div>
-
-<!--DIFERENCIAL-->
-<div class="container-fluid section-2" >
-  <div class="row flex-center">
-    <div class="col-lg-6" data-aos="fade-left">
-      <h2>Por que escolher a Rush Informática?</h2>
-      <p>Um <b>parceiro de confiança</b> para lidar com suas necessidades de TI é essencial para o seu negócio.</p>
-      <a class="btn-primary desktop-only" href="#Contato">Entrar em contato</a>
-    </div>
-    <div class="col-lg-1"></div>
-    <div class="col-lg-5" data-aos="fade-right">
-      <div class="row">
-        <div class="card-2 flex-center">
-          <img src="img/experiencia-tecnologia.png" alt="Muitas décadas de experiência em informática e tecnologia">
-          <div>
-            <h4>Experiência vasta:</h4>
-            <p class="p-card">Com <b>muitos anos no setor</b>, nossa equipe possui o conhecimento para solucionar diversos tipos de problemas.</p>
-          </div>
-        </div>
-        <div class="card-2 flex-center">
-          <img src="img/atendimento-qualidade.png" alt="Atendimento de qualidade para suporte, manutenção e instalação">
-          <div>
-            <h4>Compromisso com a excelência:</h4>
-            <p class="p-card">Entregamos um <b>serviço de alta qualidade</b> para garantir que sua empresa tenha sucesso na operação.</p>
-          </div>
-        </div>
-        <div class="card-2 flex-center">
-          <img src="img/assistencia-personalizada.png" alt="Contrato de Suporte de TI para empresas">
-          <div>
-            <h4>Atendimento personalizado:</h4>
-            <p class="p-card">Oferecemos soluções personalizadas para atender às suas necessidades de TI do seu negócio de <b>forma eficaz</b>.</p>
-          </div>
         </div>
       </div>
-
-        <a class="btn-primary mobile-only" href="#Contato">Entrar em contato</a>
-    </div>
-  </div>
-</div>
-
-<!--CLIENTES-->
-<div id="Clientes" class="container-fluid section-1">
-  <div class="row flex-center">
-    <div class="col-lg-6" data-aos="fade-right">
-      <h2>Grandes empresas confiam no nosso trabalho há vários anos.</h2>
-      <p>Prestamos serviços para empresas de todo porte e setor, estabelecendo relacionamentos duradouros com clientes fiéis que confiam em nossos serviços.</p>
-      <a class="btn-primary" href="#Contato">Quero conhecer</a>
-
-    </div>
-    <div class="col-lg-2"></div>
-    <div class="col-lg-5" data-aos="fade-left">
-     <div class="row flex-center">
-      <div class="clientes-unidade  col-xs-4 flex-center">
-        <img src="img/burger-king.png" alt="Burger King" width="100px">
+      <div class="col-lg-5 col-sm-12">
+        <ul>
+          <li><span class="glyphicon glyphicon-map-marker"></span> &nbsp Rua Amleto Farro, 600 - Santo Amaro, São Paulo
+            - SP, CEP: 04754-060</li>
+          <li><span class="glyphicon glyphicon-phone"></span> &nbsp (11) 5547-7483 / (11) 5541-7483 </li>
+          <li><i class="fa fa-whatsapp" aria-hidden="true"></i>&nbsp &nbsp <a onclick="evento_gtag('contato_whatsapp_footer')" style="display: inline;" target="_blank"
+              href="https://api.whatsapp.com/send?phone=551198371-4406&text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20que%20voc%C3%AAs%20oferecem!">(11)
+              98371-4406</a></li>
+          <li><span class="glyphicon glyphicon-envelope"></span>&nbsp &nbsp <a style="display: inline;" target="_blank"
+              href="mailto:contato@rushinformatica.com.br" onclick="evento_gtag('contato_email_footer')">contato@rushinformatica.com.br </a> </li>
+        </ul>
       </div>
-      <div class="clientes-unidade  col-xs-4 flex-center">
-        <img src="img/mercadodia.png" alt="Dia%" width="100px">
-      </div>
-      <div class="clientes-unidade  col-xs-4 flex-center">
-        <img src="img/kopenhagen.png" alt="Kopenhagen" width="100px">
-      </div>
-    </div>
-    <div class="row flex-center">
-      <div class="clientes-unidade  col-xs-4 flex-center">
-        <img src="img/kfc.png" alt="KFC" width="100px">
-      </div>
-      <div class="clientes-unidade  col-xs-4 flex-center">
-        <img src="img/giraffas.png" alt="Giraffas" width="100px">
-      </div>
-      <div class="clientes-unidade  col-xs-4 flex-center">
-        <img src="img/tenda-construtora.png" alt="Tenda Construtora" width="100px">
-      </div>
-    </div>
-    <div class="row flex-center">
-      <div class="clientes-unidade  col-xs-4 flex-center">
-        <img src="img/oki.png" alt="OKI" width="100px">
-      </div>
-      <div class="clientes-unidade  col-xs-4 flex-center">
-        <img src="img/logicalis.png" alt="Logicalis" width="100px">
-      </div>
-      <div class="clientes-unidade col-xs-4 flex-center">
-        <img src="img/soin.png" alt="Soin" width="100px">
-      </div>
-     </div>
-  </div>
-</div>
-</div>
-
-
-<!--CONTATO-->
-<div id="Contato" class="container-fluid section-2 ">
-  <div class="row flex-center">
-    <div class="col-lg-7" data-aos="fade-left">
-      <h2>Solicite a sua proposta hoje mesmo e garanta um serviço de informática de qualidade. </h2>
-      <div class="row">
-        <div class="div-contato col-sm-6">
-          <h4>WhatsApp</h4>
-          <a target="_blank" href="https://api.whatsapp.com/send?phone=5511983714406&text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20que%20voc%C3%AAs%20oferecem!">(11) 98371-4406</a>
-        </div>
-        <div class="div-contato col-sm-6">
-          <h4>E-mail</h4>
-          <a target="_blank" href="mailto:contato@rushinformatica.com.br">contato@rushinformatica.com.br </a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="div-contato col-sm-6">
-          <h4>Telefone</h4>
-          <p>(11) 5547-7483</p>
-          <p>(11) 5541-7483</p>
-        </div>
-        <div class="div-contato col-sm-6">
-          <h4>Endereço</h4>
-          <p>Rua Amleto Farro, 600 - Santo Amaro, São Paulo - SP, CEP: 04754-060</p>
-        </div>
-      </div>
-
-    </div>
-    <div class="col-lg-5" data-aos="fade-right ">
-      <iframe src="https://www.google.com/maps/embed?pb=!4v1614442521832!6m8!1m7!1sSO-_GqDvBBX3zjzcyiDP9g!2m2!1d-23.64990757579748!2d-46.71213309877202!3f23.992027!4f0!5f0.7820865974627469" width="100%" height="350" style="border:0; border-radius: 20px;" allowfullscreen="" loading="lazy"></iframe>
-    </div>
-  </div>
-</div>
-
-<footer>
-  <div class="row">
-    <div class="col-lg-3 col-sm-6">
-      <img src="img/logoW.png" width="60%" alt="Rush Informática">
-    </div>
-    <div class="col-lg-4 col-sm-6">
-      <p>A Rush Informática oferece soluções tecnológicas de excelência. Nossa equipe altamente qualificada está pronta para atender às suas necessidades de TI, garantindo qualidade e inovação.</p>
-    <div>
-
-    </div>
-    </div>
-    <div class="col-lg-5 col-sm-12">
-      <ul>
-     <li><span class="glyphicon glyphicon-map-marker"></span> &nbsp Rua Amleto Farro, 600 - Santo Amaro, São Paulo - SP, CEP: 04754-060</li>
-      <li><span class="glyphicon glyphicon-phone"></span> &nbsp (11) 5547-7483 / (11) 5541-7483 </li>
-      <li><i class="fa fa-whatsapp" aria-hidden="true"></i>&nbsp &nbsp <a style="display: inline;" target="_blank" href="https://api.whatsapp.com/send?phone=551198371-4406&text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20que%20voc%C3%AAs%20oferecem!">(11) 98371-4406</a></li>
-      <li><span class="glyphicon glyphicon-envelope"></span>&nbsp &nbsp <a style="display: inline;" target="_blank" href="mailto:contato@rushinformatica.com.br">contato@rushinformatica.com.br </a> </li>
-      </ul>
-    </div>
-    <!---
+      <!---
     <div class="col-lg-4">
       <a href="#Sobre">Sobre nós</a>
-      <a href="#Contato">Entre em contato</a>
+      <a href="https://api.whatsapp.com/send?phone=5511983714406&text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20que%20voc%C3%AAs%20oferecem!">Entre em contato</a>
     <a href="" target="_blank">Políticas de privacidade</a>
     </div>
   -->
-  </div>
+    </div>
     <div class="row text-center" style="margin-top: 50px;">
       <div class="col-lg-12">
-        <p style="text-align: center;max-width: 100%;">Desenvolvido por <a href="https://www.behance.net/brunavasc" target="_blank" style="display: inline;">Bruna Assis</a>.<br>Texto por <a href="https://andrevasconcelos.contently.com/" target="_blank" style="display: inline;">André Vasconcelos</a>.</p>
+        <p style="text-align: center;max-width: 100%;">Desenvolvido por <a href="https://www.behance.net/brunavasc"
+            target="_blank" style="display: inline;">Bruna Assis</a>.<br>Texto por <a
+            href="https://andrevasconcelos.contently.com/" target="_blank" style="display: inline;">André
+            Vasconcelos</a>.</p>
       </div>
     </div>
 
-</footer>
+  </footer>
 
-<script src="js/script.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init(
-{
-  duration: 1000
-}
-  );
-</script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init(
+      {
+        duration: 800
+      }
+    );
+  </script>
+  <script src="js/ga_script.js"></script>
 </body>
+
 </html>
