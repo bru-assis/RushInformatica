@@ -1,41 +1,49 @@
-$(document).ready(function(){
+$(document).ready(function() {
+  // Função de animação para rolar até âncoras na mesma página
   $(".navbar a, a[href='#Home'], a").on('click', function(event) {
-    event.preventDefault();
+    // Verifica se o link contém um hash (âncora)
     var hash = this.hash;
 
+    // Se o hash não estiver vazio e o destino do hash existir na página
+    if (hash !== "" && $(hash).length) {
+      event.preventDefault(); // Evita o comportamento padrão apenas para âncoras na mesma página
 
-    $('html, body').animate({
-      scrollTop: $(hash).offset().top
-    }, 900, function(){
-
-
-      window.location.hash = hash;
-    });
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function() {
+        window.location.hash = hash;
+      });
+    }
   });
 
-
+  // Função de exibição do botão de "voltar ao topo"
   $(window).scroll(function() {
-    $(".slideanim").each(function(){
+    $(".slideanim").each(function() {
       var pos = $(this).offset().top;
-
       var winTop = $(window).scrollTop();
-        if (pos < winTop + 600) {
-          $(this).addClass("slide");
-        }
+
+      if (pos < winTop + 600) {
+        $(this).addClass("slide");
+      }
     });
   });
-  mybutton = document.getElementById("btnTop");
 
-window.onscroll = function() {scrollFunction()};
+  // Lógica do botão "voltar ao topo"
+  var mybutton = document.getElementById("btnTop");
 
-function scrollFunction() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
+  window.onscroll = function() {
+    scrollFunction();
+  };
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
   }
-};
-})
+});
+
 
 
 document.addEventListener("DOMContentLoaded", function () {
