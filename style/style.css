@@ -492,13 +492,19 @@ footer ul li {
     transition: 0.5s;
   }
   .servicos-card-body {
-    min-height: 260px;
+    height: 300px;
   }
   .slides-servicos>div {
     min-width: 75%;
   }
   .numeros-importantes {
     margin-top: 100px;
+  }
+}
+/*CELULAR PEQUENO*/
+@media only screen and (max-width: 359.8px){
+  .servicos-card-body {
+    height: 360px;
   }
 }
 /*TABLET*/
@@ -546,7 +552,7 @@ footer ul li {
     min-width: 41%;
   }
   .servicos-card-body {
-    height: 245px;
+    height: 270px;
   }
   .clientes-unidade img{
     margin-top: 20px;
@@ -585,9 +591,9 @@ footer ul li {
     width: 100%;
   }
   .servicos-card-header {
-    height: 85px;
+    height: 82px;
   }
   .servicos-card-body {
-    height: 250px;
+    height: 285px;
   }
 }
